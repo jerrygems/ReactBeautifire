@@ -5,6 +5,7 @@
     <View>
         {/*or*/} 
     <Text>
-``` and use it there and All Set ;D
+``` 
+## and use it there and All Set ;D
 
 ## It's Open for Contribution so you can try contributing in it to make developers life more easy cuz i learnt alot from peoples and communities just initiating this project for my dear developers

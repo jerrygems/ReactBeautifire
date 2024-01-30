@@ -1,6 +1,5 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
-import { Dimensions } from 'react-native';
 
 const WT = Dimensions.get('window').width
 const HT = Dimensions.get('window').height
@@ -31,14 +30,12 @@ const Beauty = StyleSheet.create({
         flexDirection: "column",
     },
     HBoxCented: {
-        backgroundColor: 'transparent',
         flex: 1,
         flexDirection: "row",
         justifyContent: 'center',
         alignItems: 'center',
     },
     VBoxCented: {
-        backgroundColor: 'transparent',
         flex: 1,
         flexDirection: "column",
         justifyContent: 'center',
@@ -67,7 +64,18 @@ const Beauty = StyleSheet.create({
         borderRadius: 50,
         elevation: 5
     },
+    // shadows
+    S5: { elevation: 5 },
+    S10: { elevation: 10 },
     // buttons
+    centedBtn:{
+        flex:1,
+        justifyContent:'center',
+        alignItems:'center',
+        marginHorizontal:10,
+        padding:10,
+        borderRadius:50,
+    },
 
     // headings
     h1: {
@@ -109,6 +117,7 @@ const Beauty = StyleSheet.create({
     limeBG: { backgroundColor: 'lime' },
     oliveBG: { backgroundColor: 'olive' },
     primaryBG: { backgroundColor: '#1CADFF' },
+    noBG: { backgroundColor: 'transparent' },
     // margins
     ML5: { marginLeft: 5 },
     ML10: { marginLeft: 10 },
@@ -116,24 +125,117 @@ const Beauty = StyleSheet.create({
     ML30: { marginLeft: 30 },
     ML40: { marginLeft: 40 },
     ML50: { marginLeft: 50 },
+
     MR5: { marginRight: 5 },
     MR10: { marginRight: 10 },
     MR20: { marginRight: 20 },
     MR30: { marginRight: 30 },
     MR40: { marginRight: 40 },
     MR50: { marginRight: 50 },
+
     MT5: { marginTop: 5 },
     MT10: { marginTop: 10 },
     MT20: { marginTop: 20 },
     MT30: { marginTop: 30 },
     MT40: { marginTop: 40 },
     MT50: { marginTop: 50 },
+
     MB5: { marginBottom: 5 },
     MB10: { marginBottom: 10 },
     MB20: { marginBottom: 20 },
     MB30: { marginBottom: 30 },
     MB40: { marginBottom: 40 },
     MB50: { marginBottom: 50 },
+
+    M5: { margin: 5 },
+    M10: { margin: 10 },
+    M15: { margin: 15 },
+    M20: { margin: 20 },
+    M25: { margin: 25 },
+    M30: { margin: 30 },
+    M35: { margin: 35 },
+    M40: { margin: 40 },
+    M50: { margin: 50 },
+    
+    MH5: { marginHorizontal: 5 },
+    MH10: { marginHorizontal: 10 },
+    MH15: { marginHorizontal: 15 },
+    MH20: { marginHorizontal: 20 },
+    MH25: { marginHorizontal: 25 },
+    MH30: { marginHorizontal: 30 },
+    MH35: { marginHorizontal: 35 },
+    MH40: { marginHorizontal: 40 },
+    MH50: { marginHorizontal: 50 },
+
+    MV5: { marginVertical: 5 },
+    MV10: { marginVertical: 10 },
+    MV15: { marginVertical: 15 },
+    MV20: { marginVertical: 20 },
+    MV25: { marginVertical: 25 },
+    MV30: { marginVertical: 30 },
+    MV35: { marginVertical: 35 },
+    MV40: { marginVertical: 40 },
+    MV50: { marginVertical: 50 },
+   
+    
+    // margins
+    PL5: { paddingLeft: 5 },
+    PL10: { paddingLeft: 10 },
+    PL20: { paddingLeft: 20 },
+    PL30: { paddingLeft: 30 },
+    PL40: { paddingLeft: 40 },
+    PL50: { paddingLeft: 50 },
+
+    PR5: { paddingRight: 5 },
+    PR10: { paddingRight: 10 },
+    PR20: { paddingRight: 20 },
+    PR30: { paddingRight: 30 },
+    PR40: { paddingRight: 40 },
+    PR50: { paddingRight: 50 },
+
+    PT5: { paddingTop: 5 },
+    PT10: { paddingTop: 10 },
+    PT20: { paddingTop: 20 },
+    PT30: { paddingTop: 30 },
+    PT40: { paddingTop: 40 },
+    PT50: { paddingTop: 50 },
+
+    PB5: { paddingBottom: 5 },
+    PB10: { paddingBottom: 10 },
+    PB20: { paddingBottom: 20 },
+    PB30: { paddingBottom: 30 },
+    PB40: { paddingBottom: 40 },
+    PB50: { paddingBottom: 50 },
+
+    P5: { padding: 5 },
+    P10: { padding: 10 },
+    P15: { padding: 15 },
+    P20: { padding: 20 },
+    P25: { padding: 25 },
+    P30: { padding: 30 },
+    P35: { padding: 35 },
+    P40: { padding: 40 },
+    P50: { padding: 50 },
+
+    PH5: { paddingHorizontal: 5 },
+    PH10: { paddingHorizontal: 10 },
+    PH15: { paddingHorizontal: 15 },
+    PH20: { paddingHorizontal: 20 },
+    PH25: { paddingHorizontal: 25 },
+    PH30: { paddingHorizontal: 30 },
+    PH35: { paddingHorizontal: 35 },
+    PH40: { paddingHorizontal: 40 },
+    PH50: { paddingHorizontal: 50 },
+
+    PV5: { paddingVertical: 5 },
+    PV10: { paddingVertical: 10 },
+    PV15: { paddingVertical: 15 },
+    PV20: { paddingVertical: 20 },
+    PV25: { paddingVertical: 25 },
+    PV30: { paddingVertical: 30 },
+    PV35: { paddingVertical: 35 },
+    PV40: { paddingVertical: 40 },
+    PV50: { paddingVertical: 50 },
     // columns
     colF1: { flex: 1, flexDirection: 'column' },
     col10: { flex: 0.1, flexDirection: 'column' },
@@ -156,6 +258,15 @@ const Beauty = StyleSheet.create({
     row70: { flex: 0.7, flexDirection: 'row' },
     row80: { flex: 0.8, flexDirection: 'row' },
     row90: { flex: 0.9, flexDirection: 'row' },
+
+    // Border
+    R5: { borderRadius: 5 },
+    R10: { borderRadius: 10 },
+    R15: { borderRadius: 15 },
+    R20: { borderRadius: 20 },
+    R30: { borderRadius: 30 },
+    R40: { borderRadius: 40 },
+    R50: { borderRadius: 50 },
 });
 
 export default Beauty;

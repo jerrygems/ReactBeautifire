@@ -57,41 +57,73 @@ const Beauty = StyleSheet.create({
     colRev: { flexDirection: 'column-reverse' },
     // Icons
     Icon: {
+        height: 30,
+        width: 30,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 50,
+        elevation: 5,
+    },
+    Icon2: {
         height: 50,
         width: 50,
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 50,
-        elevation: 5
+    },
+    // Images
+    Img: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    Img2: {
+        position: 'absolute',
+        width: 100,
+        height: 100,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 100,
     },
     // shadows
     S5: { elevation: 5 },
     S10: { elevation: 10 },
+    // borders
+    B5: { borderRadius: 5 },
+    B10: { borderRadius: 10 },
+    B15: { borderRadius: 15 },
+    B20: { borderRadius: 20 },
+    B25: { borderRadius: 25 },
+    B30: { borderRadius: 30 },
+    B35: { borderRadius: 35 },
+    B40: { borderRadius: 40 },
+    B45: { borderRadius: 45 },
     // buttons
-    centedBtn:{
-        flex:1,
-        justifyContent:'center',
-        alignItems:'center',
-        marginHorizontal:10,
-        padding:10,
-        borderRadius:50,
+    centedBtn: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginHorizontal: 10,
+        padding: 10,
+        borderRadius: 50,
     },
 
     // headings
     h1: {
         fontSize: 22,
         fontWeight: 'bold',
-        backgroundColor: 'transparent',
-        marginTop: -5,
-        // textShadowColor: '#000000',
-        // textShadowOffset: { width: 1, height: 1 },
-        // textShadowRadius: 0,
     },
     h2: {
         fontSize: 16,
-        fontWeight: '100',
-        backgroundColor: 'transparent',
-        marginRight: 10
+    },
+    h3: {
+        fontSize: 12,
+    },
+    h4: {
+        fontSize: 8,
+    },
+    h5: {
+        fontSize: 5,
     },
     // paragraphs
 
@@ -118,6 +150,29 @@ const Beauty = StyleSheet.create({
     oliveBG: { backgroundColor: 'olive' },
     primaryBG: { backgroundColor: '#1CADFF' },
     noBG: { backgroundColor: 'transparent' },
+    //   textColors
+    blackFG: { color: 'black' },
+    whiteFG: { color: 'white' },
+    redFG: { color: 'red' },
+    greenFG: { color: 'green' },
+    blueFG: { color: 'blue' },
+    yellowFG: { color: 'yellow' },
+    orangeFG: { color: 'orange' },
+    purpleFG: { color: 'purple' },
+    pinkFG: { color: 'pink' },
+    brownFG: { color: 'brown' },
+    grayFG: { color: 'gray' },
+    lightGrayFG: { color: 'lightgray' },
+    darkGrayFG: { color: 'darkgray' },
+    cyanFG: { color: 'cyan' },
+    magentaFG: { color: 'magenta' },
+    indigoFG: { color: 'indigo' },
+    violetFG: { color: 'violet' },
+    tealFG: { color: 'teal' },
+    limeFG: { color: 'lime' },
+    oliveFG: { color: 'olive' },
+    primaryFG: { color: '#1CADFF' },
+    noFG: { color: 'transparent' },
     // margins
     ML5: { marginLeft: 5 },
     ML10: { marginLeft: 10 },
@@ -156,7 +211,7 @@ const Beauty = StyleSheet.create({
     M35: { margin: 35 },
     M40: { margin: 40 },
     M50: { margin: 50 },
-    
+
     MH5: { marginHorizontal: 5 },
     MH10: { marginHorizontal: 10 },
     MH15: { marginHorizontal: 15 },
@@ -176,8 +231,8 @@ const Beauty = StyleSheet.create({
     MV35: { marginVertical: 35 },
     MV40: { marginVertical: 40 },
     MV50: { marginVertical: 50 },
-   
-    
+
+
     // margins
     PL5: { paddingLeft: 5 },
     PL10: { paddingLeft: 10 },
@@ -267,6 +322,32 @@ const Beauty = StyleSheet.create({
     R30: { borderRadius: 30 },
     R40: { borderRadius: 40 },
     R50: { borderRadius: 50 },
+
+    // some stuff
+    lefty: {
+        justifyContent: 'flex-start'
+    },
+    righty: {
+        justifyContent: 'flex-end'
+    },
+    txtLeft: {
+        textAlign: 'left'
+    },
+    txtRight: {
+        textAlign: 'right'
+    },
+    txtCenter: {
+        textAlign: 'center'
+    },
+    // font styles
+    Roboto: {
+        fontFamily: 'Roboto'
+    },
+    W600: {
+        fontWeight: '600'
+    },
+    // alignment
+
 });
 
 export default Beauty;
